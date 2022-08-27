@@ -1,11 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-
-int addition(int x, int y);
-int subtraction(int x, int y);
-int multiplication(int x, int y);
-int division(int x, int y);
+int add(int x, int y);
+int sub(int x, int y);
+int mul(int x, int y);
+int div(int x, int y);
 
 void fact();
 void even_odd();
@@ -27,22 +24,22 @@ int main()
     {
         case 1:
         sum1 = add(num1, num2);
-        printf("the sum is: ", sum1);
+        printf("the sum is: %d", sum1);
         break;
         
         case 2:
         sub1 = sub(num1, num2);
-        printf("the sub is: ", sub1);
+        printf("the sub is: %d", sub1);
         break;
         
         case 3:
         mul1 = mul(num1, num2);
-        printf("the mul is: ", mul1);
+        printf("the mul is: %d", mul1);
         break;
         
         case 4:
         div1 = div(num1, num2);
-        printf("the div is: ", div1);
+        printf("the div is: %d", div1);
         break;
         
         case 5:
@@ -55,28 +52,28 @@ int main()
     }
 }
 //Addition
-int addition(int x, int y)
+int add(int x, int y)
 {
     int z;
     z = x+y;
     return (z);
 }
 //subtraction
-int subtraction(int x, int y)
+int sub(int x, int y)
 {
     int z;
     z = x-y;
     return (z);
 }
 //multiplication
-int multiplication(int x, int y)
+int mul(int x, int y)
 {
     int z;
     z = x*y;
     return (z);
 }
 //division
-int division(int x, int y)
+int div(int x, int y)
 {
     int z;
     z = x/y;
@@ -105,6 +102,7 @@ void even_odd()
     else
     printf("odd number\n");
 }
+
 
 
 
