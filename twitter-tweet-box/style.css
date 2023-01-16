@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1da1f2;
+}
+
+.wrapper{
+    background: #fff;
+    border-radius: 15px;
+    max-width: 475px;
+    width: 100%;
+    padding: 25px 25px 15px 25px;
+}
+.input-box{
+    padding-top: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.input-box .tweet-area{
+    position: relative;
+    min-height: 130px;
+    max-height: 170px;
+    overflow-y: auto;
+}
+.tweet-area::-webkit-scrollbar{
+    width: 0px;
+}
+
+.tweet-area .placeholder{
+    position: absolute;
+    margin-top: -3px;
+    font-size: 22px;
+    color: #98a;
+    pointer-events: none;
+}
+
+.tweet-area .input{
+    outline: none;
+    font-size: 17px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.tweet-area .editable {
+    position: relative;
+    z-index: 5;
+}
+
+.tweet-area .readonly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: transparent;
+    background: transparent;
+}
+
+.readonly .highlight{
+    background: #fd9bb0;
+}
+
+.input-box .privacy{
+    color:#1da1f2;
+    margin: 15px 0;
+    padding: 7px 10px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 50px;
+    transition: background 0.2s ease;
+}
+
+.input-box .privacy:hover,:hover icons li{
+    background: #e7f5fe;
+}
+
+.privacy i{
+    font-size: 18px;
+}
+
+.privacy span{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+.bottom{
+    display: flex;
+    margin-top: 13px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom .icons{
+    display: inline-flex;
+}
+
+.icons li{
+    color: #1da1f2;
+    list-style: none;
+    height: 38px;
+    width: 38px;
+    margin: 0 2px;
+    font-size: 20px;
+    background: #e7f5fe;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+.bottom .content{
+    display: inline-flex;
+    align-items: center;
+}
+
+.content .counter{
+    display: none;
+    margin-right: 15px;
+    padding-right: 15px;
+    color: #333;
+    border-right: 1px solid #aab8c2;
+}
+
+.content button{
+    padding: 9px 18px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #1da1f2;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.content button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
